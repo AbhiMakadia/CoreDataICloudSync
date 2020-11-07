@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  ICloudSync
+
+  Created by Abhi Makadiya on 07/11/20.
+  Copyright © 2020 Abhi Makadiya. All rights reserved.
+*/
+
+// MARK: For Image picker manager
+
+"chooseImage"               = "Choose Image";
+"cancel"                    = "Cancel";
+"photos"                    = "Photos";
+"camera"                    = "Camera";
+"removePhoto"               = "Remove photo";
+"showPhoto"                 = "View photo";
+"unableToAccessThe"         = "Unable to access the ";
+"toEnableAccessTheCamera"   = "To enable access, go to Settings > Privacy > Camera and turn on Camera access for this app.";
+"toEnableAccessThePhotos"   = "To enable access, go to Settings > Privacy > Photos and turn on Photos access for this app.";
+"warning"                   = "Warning";
+"youDoNotHaveCamera"        = "You don't have camera";
+"ok"                        = "OK";
+"settings"                  = "Settings";

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaceListTVCell" rowHeight="80" id="KGk-i7-Jjw" customClass="PlaceListTVCell" customModule="ICloudSync" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtlerock" translatesAutoresizingMaskIntoConstraints="NO" id="BGU-DZ-SlS" customClass="CustomImageView" customModule="ICloudSync" customModuleProvider="target">
+                        <rect key="frame" x="20" y="17.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="MQa-yd-DIg"/>
+                            <constraint firstAttribute="width" constant="45" id="N54-es-YMk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turtle Lack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr7-XY-YYl">
+                        <rect key="frame" x="75" y="29.5" width="328" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" name="orange"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yr7-XY-YYl" firstAttribute="centerY" secondItem="BGU-DZ-SlS" secondAttribute="centerY" id="64l-Nh-j4P"/>
+                    <constraint firstItem="yr7-XY-YYl" firstAttribute="leading" secondItem="BGU-DZ-SlS" secondAttribute="trailing" constant="10" id="JRb-gZ-6v7"/>
+                    <constraint firstAttribute="trailing" secondItem="yr7-XY-YYl" secondAttribute="trailing" constant="20" id="aD6-98-4XT"/>
+                    <constraint firstItem="BGU-DZ-SlS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="c1L-JE-mUe"/>
+                    <constraint firstItem="BGU-DZ-SlS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fFi-qX-10w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgPlace" destination="BGU-DZ-SlS" id="oc3-c1-vJX"/>
+                <outlet property="lblPlaceName" destination="yr7-XY-YYl" id="2O3-i9-WZK"/>
+            </connections>
+            <point key="canvasLocation" x="206.52173913043481" y="147.99107142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="turtlerock" width="250" height="250"/>
+        <namedColor name="orange">
+            <color red="0.93744677310000002" green="0.29592373970000002" blue="0.25912436840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dash Board ListVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DashBoardListVC" id="BYZ-38-t0r" customClass="DashBoardListVC" customModule="ICloudSync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o8o-Mx-gHP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="UTA-gp-R0c"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3qY-ju-Be7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="o8o-Mx-gHP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0Sc-lc-LiB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o8o-Mx-gHP" secondAttribute="trailing" id="sxw-do-CHd"/>
+                            <constraint firstItem="o8o-Mx-gHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w6Z-hz-e1D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o8o-Mx-gHP" secondAttribute="bottom" id="yGO-VC-7Jz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tblPlaceList" destination="o8o-Mx-gHP" id="3Lg-PW-7hk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="139"/>
+        </scene>
+        <!--Add DetailVC-->
+        <scene sceneID="kbw-Lm-nQ2">
+            <objects>
+                <viewController storyboardIdentifier="AddDetailVC" id="nO5-hm-Ki5" customClass="AddDetailVC" customModule="ICloudSync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nRH-ng-lx8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtlerock" translatesAutoresizingMaskIntoConstraints="NO" id="feP-R0-dGL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="RmO-oe-pYp"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWh-hg-mI9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="220"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LsS-n2-IPS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtlerock" translatesAutoresizingMaskIntoConstraints="NO" id="l6D-pY-lCW" customClass="CustomImageView" customModule="ICloudSync" customModuleProvider="target">
+                                <rect key="frame" x="107" y="164" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="AON-S3-rgb"/>
+                                    <constraint firstAttribute="width" constant="200" id="Ufn-DZ-sBm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lke-LU-LDa">
+                                <rect key="frame" x="107" y="164" width="200" height="200"/>
+                                <connections>
+                                    <action selector="btnAddPlaceImageAction:" destination="nO5-hm-Ki5" eventType="touchUpInside" id="DAZ-9E-S55"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ShC-Oe-3Oy">
+                                <rect key="frame" x="20" y="397" width="374" height="34"/>
+                                <color key="tintColor" name="orange"/>
+                                <color key="textColor" name="orange"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dn7-eN-fCT">
+                                <rect key="frame" x="20" y="446" width="374" height="34"/>
+                                <color key="tintColor" name="orange"/>
+                                <color key="textColor" name="orange"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYQ-3u-y4s" customClass="CustomButton" customModule="ICloudSync" customModuleProvider="target">
+                                <rect key="frame" x="152.5" y="503" width="109" height="48"/>
+                                <color key="backgroundColor" name="orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="9aZ-p5-h5U"/>
+                                    <constraint firstAttribute="height" constant="48" id="RDu-GD-Lvn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSaveAction:" destination="nO5-hm-Ki5" eventType="touchUpInside" id="TSk-dn-Yfi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UnM-gL-Hpe" firstAttribute="trailing" secondItem="ShC-Oe-3Oy" secondAttribute="trailing" constant="20" id="0iL-iy-B5X"/>
+                            <constraint firstItem="UnM-gL-Hpe" firstAttribute="trailing" secondItem="feP-R0-dGL" secondAttribute="trailing" id="7dB-Rm-olE"/>
+                            <constraint firstItem="Lke-LU-LDa" firstAttribute="bottom" secondItem="l6D-pY-lCW" secondAttribute="bottom" id="87s-dH-3h4"/>
+                            <constraint firstItem="l6D-pY-lCW" firstAttribute="centerY" secondItem="feP-R0-dGL" secondAttribute="bottom" id="9ME-R7-8ZY"/>
+                            <constraint firstItem="QYQ-3u-y4s" firstAttribute="centerX" secondItem="UnM-gL-Hpe" secondAttribute="centerX" id="9b8-dR-OTb"/>
+                            <constraint firstItem="XWh-hg-mI9" firstAttribute="trailing" secondItem="feP-R0-dGL" secondAttribute="trailing" id="Bjd-Pe-tYe"/>
+                            <constraint firstItem="XWh-hg-mI9" firstAttribute="top" secondItem="feP-R0-dGL" secondAttribute="top" id="CgS-Z4-G8W"/>
+                            <constraint firstItem="Dn7-eN-fCT" firstAttribute="top" secondItem="ShC-Oe-3Oy" secondAttribute="bottom" constant="15" id="DgO-F6-QfO"/>
+                            <constraint firstItem="feP-R0-dGL" firstAttribute="leading" secondItem="UnM-gL-Hpe" secondAttribute="leading" id="JDC-BZ-2IL"/>
+                            <constraint firstItem="ShC-Oe-3Oy" firstAttribute="top" secondItem="l6D-pY-lCW" secondAttribute="bottom" constant="33" id="LoO-PE-OEl"/>
+                            <constraint firstItem="ShC-Oe-3Oy" firstAttribute="leading" secondItem="UnM-gL-Hpe" secondAttribute="leading" constant="20" id="Mm3-Kc-Mz2"/>
+                            <constraint firstItem="Lke-LU-LDa" firstAttribute="trailing" secondItem="l6D-pY-lCW" secondAttribute="trailing" id="SaQ-zP-11b"/>
+                            <constraint firstItem="XWh-hg-mI9" firstAttribute="bottom" secondItem="feP-R0-dGL" secondAttribute="bottom" id="SpL-rn-eZm"/>
+                            <constraint firstItem="Dn7-eN-fCT" firstAttribute="leading" secondItem="ShC-Oe-3Oy" secondAttribute="leading" id="U08-XG-4I8"/>
+                            <constraint firstItem="Lke-LU-LDa" firstAttribute="leading" secondItem="l6D-pY-lCW" secondAttribute="leading" id="asc-Ct-Okj"/>
+                            <constraint firstItem="Lke-LU-LDa" firstAttribute="top" secondItem="l6D-pY-lCW" secondAttribute="top" id="cGB-D4-mwY"/>
+                            <constraint firstItem="Dn7-eN-fCT" firstAttribute="trailing" secondItem="ShC-Oe-3Oy" secondAttribute="trailing" id="icF-3b-dDM"/>
+                            <constraint firstItem="l6D-pY-lCW" firstAttribute="centerX" secondItem="UnM-gL-Hpe" secondAttribute="centerX" id="mym-6i-65z"/>
+                            <constraint firstItem="feP-R0-dGL" firstAttribute="top" secondItem="UnM-gL-Hpe" secondAttribute="top" id="sBa-pj-UOu"/>
+                            <constraint firstItem="QYQ-3u-y4s" firstAttribute="top" secondItem="Dn7-eN-fCT" secondAttribute="bottom" constant="23" id="v7s-sh-mTP"/>
+                            <constraint firstItem="XWh-hg-mI9" firstAttribute="leading" secondItem="feP-R0-dGL" secondAttribute="leading" id="vNk-sf-Stt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UnM-gL-Hpe"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imgPlace" destination="l6D-pY-lCW" id="gcF-Hz-mvU"/>
+                        <outlet property="imgbackground" destination="feP-R0-dGL" id="oRb-L9-7xm"/>
+                        <outlet property="tfAddress" destination="Dn7-eN-fCT" id="jSt-Mc-cMc"/>
+                        <outlet property="tfPlaceName" destination="ShC-Oe-3Oy" id="m59-Rh-l3Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27u-Sc-EfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.00000000000011" y="138.61607142857142"/>
+        </scene>
+        <!--Place DetailVC-->
+        <scene sceneID="jYd-Bh-pQ3">
+            <objects>
+                <viewController storyboardIdentifier="PlaceDetailVC" id="J4M-Qu-0aY" customClass="PlaceDetailVC" customModule="ICloudSync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P00-JL-rku">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtlerock" translatesAutoresizingMaskIntoConstraints="NO" id="9z8-h1-Voy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="t7a-s6-Yoc"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zG6-Jm-lGY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="220"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pvL-Mw-QrL">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtlerock" translatesAutoresizingMaskIntoConstraints="NO" id="QzM-NF-uOv" customClass="CustomImageView" customModule="ICloudSync" customModuleProvider="target">
+                                <rect key="frame" x="107" y="164" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="e5g-6d-JhY"/>
+                                    <constraint firstAttribute="height" constant="200" id="uLa-3I-VEV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turtle Rock" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pd-WN-fIA">
+                                <rect key="frame" x="20" y="402" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joshua Tree National Park California" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPA-8D-e8Z">
+                                <rect key="frame" x="20" y="434" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0Pd-WN-fIA" firstAttribute="top" secondItem="QzM-NF-uOv" secondAttribute="bottom" constant="38" id="Cdg-Ah-x2L"/>
+                            <constraint firstItem="zG6-Jm-lGY" firstAttribute="leading" secondItem="9z8-h1-Voy" secondAttribute="leading" id="DI9-Cf-Osa"/>
+                            <constraint firstItem="zG6-Jm-lGY" firstAttribute="bottom" secondItem="9z8-h1-Voy" secondAttribute="bottom" id="Fm2-4k-2zD"/>
+                            <constraint firstItem="9z8-h1-Voy" firstAttribute="trailing" secondItem="yxd-Zn-Xxb" secondAttribute="trailing" id="PKz-zq-S4H"/>
+                            <constraint firstItem="QzM-NF-uOv" firstAttribute="centerY" secondItem="9z8-h1-Voy" secondAttribute="bottom" id="Rjz-Lp-FKO"/>
+                            <constraint firstItem="zG6-Jm-lGY" firstAttribute="trailing" secondItem="9z8-h1-Voy" secondAttribute="trailing" id="SnQ-8Q-ude"/>
+                            <constraint firstItem="jPA-8D-e8Z" firstAttribute="trailing" secondItem="0Pd-WN-fIA" secondAttribute="trailing" id="Z5O-16-ghl"/>
+                            <constraint firstItem="9z8-h1-Voy" firstAttribute="top" secondItem="yxd-Zn-Xxb" secondAttribute="top" id="Ziu-55-nL8"/>
+                            <constraint firstItem="jPA-8D-e8Z" firstAttribute="top" secondItem="0Pd-WN-fIA" secondAttribute="bottom" constant="5.5" id="d3j-qs-hdh"/>
+                            <constraint firstItem="9z8-h1-Voy" firstAttribute="leading" secondItem="yxd-Zn-Xxb" secondAttribute="leading" id="gJJ-l0-eTB"/>
+                            <constraint firstItem="zG6-Jm-lGY" firstAttribute="top" secondItem="9z8-h1-Voy" secondAttribute="top" id="h6L-bS-uEG"/>
+                            <constraint firstItem="yxd-Zn-Xxb" firstAttribute="trailing" secondItem="0Pd-WN-fIA" secondAttribute="trailing" constant="20" id="jUz-yM-2rj"/>
+                            <constraint firstItem="jPA-8D-e8Z" firstAttribute="leading" secondItem="0Pd-WN-fIA" secondAttribute="leading" id="met-kb-Mld"/>
+                            <constraint firstItem="QzM-NF-uOv" firstAttribute="centerX" secondItem="yxd-Zn-Xxb" secondAttribute="centerX" id="qbq-9X-lAu"/>
+                            <constraint firstItem="0Pd-WN-fIA" firstAttribute="leading" secondItem="yxd-Zn-Xxb" secondAttribute="leading" constant="20" id="tCy-Vw-SF8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yxd-Zn-Xxb"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgBackground" destination="9z8-h1-Voy" id="ATy-Jl-Boh"/>
+                        <outlet property="imgPlace" destination="QzM-NF-uOv" id="0eb-d9-RGA"/>
+                        <outlet property="lblPlaceAddress" destination="jPA-8D-e8Z" id="2iL-Hg-o64"/>
+                        <outlet property="lblPlaceName" destination="0Pd-WN-fIA" id="QFU-Aq-qgL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkY-M1-NZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1467" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="turtlerock" width="250" height="250"/>
+        <namedColor name="orange">
+            <color red="0.93699997663497925" green="0.29600000381469727" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

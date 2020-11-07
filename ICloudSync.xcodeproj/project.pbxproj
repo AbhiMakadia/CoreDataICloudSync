@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31826A90EE3587D81A1004E7 /* Pods_ICloudSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9937C7563F912A889ED4AB5 /* Pods_ICloudSync.framework */; };
+		5AD0289FA6F889C5B264A34E /* Pods_ICloudSyncTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4311CB6FCC39633E616FDBC8 /* Pods_ICloudSyncTests.framework */; };
+		9AB73815E6F25DCC77F1F14F /* Pods_ICloudSync_ICloudSyncUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16293B00F1C09BF2EBD114 /* Pods_ICloudSync_ICloudSyncUITests.framework */; };
+		CD192B722551ACF400655966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD192B712551ACF400655966 /* AppDelegate.swift */; };
+		CD192B742551ACF400655966 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD192B732551ACF400655966 /* SceneDelegate.swift */; };
+		CD192B792551ACF400655966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD192B772551ACF400655966 /* Main.storyboard */; };
+		CD192B7C2551ACF400655966 /* ICloudSync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD192B7A2551ACF400655966 /* ICloudSync.xcdatamodeld */; };
+		CD192B7E2551ACF500655966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD192B7D2551ACF500655966 /* Assets.xcassets */; };
+		CD192B812551ACF500655966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD192B7F2551ACF500655966 /* LaunchScreen.storyboard */; };
+		CD192B8C2551ACF600655966 /* ICloudSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD192B8B2551ACF600655966 /* ICloudSyncTests.swift */; };
+		CD192B972551ACF600655966 /* ICloudSyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD192B962551ACF600655966 /* ICloudSyncUITests.swift */; };
+		CD192BA62551AFE600655966 /* CoreDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD192BA52551AFE600655966 /* CoreDataAccess.swift */; };
+		CD192BAD2551B16C00655966 /* DashBoardListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD192BAC2551B16C00655966 /* DashBoardListVC.swift */; };
+		CD192BB02551B1AF00655966 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD192BAF2551B1AF00655966 /* AppCoordinator.swift */; };
+		CD192BB22551B1C000655966 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD192BB12551B1C000655966 /* Coordinator.swift */; };
+		CD192BB42551B1D100655966 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD192BB32551B1D100655966 /* HomeCoordinator.swift */; };
+		CD1CD7C52556A36300980B9E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1CD7C42556A36300980B9E /* CloudKit.framework */; };
+		CD1CD7C72556A60B00980B9E /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1CD7C62556A60B00980B9E /* DashboardViewModel.swift */; };
+		CD33E32C2556629E00C0F2AC /* PlaceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E32B2556629E00C0F2AC /* PlaceDetailVC.swift */; };
+		CD33E32E255662D800C0F2AC /* PlaceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E32D255662D800C0F2AC /* PlaceDetailViewModel.swift */; };
+		CD33E331255669FD00C0F2AC /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E330255669FD00C0F2AC /* ImagePickerManager.swift */; };
+		CD33E33325566B5100C0F2AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD33E33225566B5100C0F2AC /* Localizable.strings */; };
+		CD33E33625566BAF00C0F2AC /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E33525566BAF00C0F2AC /* UIAlertControllerExtension.swift */; };
+		CD33E33825566BED00C0F2AC /* QueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E33725566BED00C0F2AC /* QueueExtension.swift */; };
+		CD33E3402556782900C0F2AC /* Nature+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E33E2556782800C0F2AC /* Nature+CoreDataClass.swift */; };
+		CD33E3412556782900C0F2AC /* Nature+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E33F2556782900C0F2AC /* Nature+CoreDataProperties.swift */; };
+		CD54AD182551B97700BBF3B6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD172551B97700BBF3B6 /* R.generated.swift */; };
+		CD54AD1E2551CBFE00BBF3B6 /* AddDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD1D2551CBFE00BBF3B6 /* AddDetailVC.swift */; };
+		CD54AD212551CED800BBF3B6 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD202551CED800BBF3B6 /* CustomImageView.swift */; };
+		CD54AD232551D0F300BBF3B6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD222551D0F300BBF3B6 /* CustomButton.swift */; };
+		CD54AD272551D26C00BBF3B6 /* PlaceListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD252551D26C00BBF3B6 /* PlaceListTVCell.swift */; };
+		CD54AD282551D26C00BBF3B6 /* PlaceListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD54AD262551D26C00BBF3B6 /* PlaceListTVCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD192B882551ACF600655966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD192B662551ACF400655966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD192B6D2551ACF400655966;
+			remoteInfo = ICloudSync;
+		};
+		CD192B932551ACF600655966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD192B662551ACF400655966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD192B6D2551ACF400655966;
+			remoteInfo = ICloudSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4311CB6FCC39633E616FDBC8 /* Pods_ICloudSyncTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICloudSyncTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E16293B00F1C09BF2EBD114 /* Pods_ICloudSync_ICloudSyncUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICloudSync_ICloudSyncUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DFD3543D6F4B4D8DEA6D47C /* Pods-ICloudSync-ICloudSyncUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICloudSync-ICloudSyncUITests.debug.xcconfig"; path = "Target Support Files/Pods-ICloudSync-ICloudSyncUITests/Pods-ICloudSync-ICloudSyncUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EEE0C03A2841A74826F612C /* Pods-ICloudSync-ICloudSyncUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICloudSync-ICloudSyncUITests.release.xcconfig"; path = "Target Support Files/Pods-ICloudSync-ICloudSyncUITests/Pods-ICloudSync-ICloudSyncUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A9937C7563F912A889ED4AB5 /* Pods_ICloudSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICloudSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5B983B39CAD2217236D7B6 /* Pods-ICloudSyncTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICloudSyncTests.debug.xcconfig"; path = "Target Support Files/Pods-ICloudSyncTests/Pods-ICloudSyncTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF3027B04EA3D6C5DB061B65 /* Pods-ICloudSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICloudSync.debug.xcconfig"; path = "Target Support Files/Pods-ICloudSync/Pods-ICloudSync.debug.xcconfig"; sourceTree = "<group>"; };
+		CC6D6E118C006C87188921BA /* Pods-ICloudSyncTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICloudSyncTests.release.xcconfig"; path = "Target Support Files/Pods-ICloudSyncTests/Pods-ICloudSyncTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD192B6E2551ACF400655966 /* ICloudSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICloudSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD192B712551ACF400655966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD192B732551ACF400655966 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD192B782551ACF400655966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD192B7B2551ACF400655966 /* ICloudSync.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ICloudSync.xcdatamodel; sourceTree = "<group>"; };
+		CD192B7D2551ACF500655966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD192B802551ACF500655966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD192B822551ACF500655966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD192B872551ACF600655966 /* ICloudSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICloudSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD192B8B2551ACF600655966 /* ICloudSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudSyncTests.swift; sourceTree = "<group>"; };
+		CD192B8D2551ACF600655966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD192B922551ACF600655966 /* ICloudSyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICloudSyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD192B962551ACF600655966 /* ICloudSyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudSyncUITests.swift; sourceTree = "<group>"; };
+		CD192B982551ACF600655966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD192BA52551AFE600655966 /* CoreDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataAccess.swift; sourceTree = "<group>"; };
+		CD192BAC2551B16C00655966 /* DashBoardListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardListVC.swift; sourceTree = "<group>"; };
+		CD192BAF2551B1AF00655966 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CD192BB12551B1C000655966 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CD192BB32551B1D100655966 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		CD1CD7C32556A34B00980B9E /* ICloudSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ICloudSync.entitlements; sourceTree = "<group>"; };
+		CD1CD7C42556A36300980B9E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		CD1CD7C62556A60B00980B9E /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		CD33E32B2556629E00C0F2AC /* PlaceDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailVC.swift; sourceTree = "<group>"; };
+		CD33E32D255662D800C0F2AC /* PlaceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewModel.swift; sourceTree = "<group>"; };
+		CD33E330255669FD00C0F2AC /* ImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		CD33E33225566B5100C0F2AC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CD33E33525566BAF00C0F2AC /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		CD33E33725566BED00C0F2AC /* QueueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueExtension.swift; sourceTree = "<group>"; };
+		CD33E33E2556782800C0F2AC /* Nature+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nature+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CD33E33F2556782900C0F2AC /* Nature+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nature+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CD54AD172551B97700BBF3B6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CD54AD1D2551CBFE00BBF3B6 /* AddDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDetailVC.swift; sourceTree = "<group>"; };
+		CD54AD202551CED800BBF3B6 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		CD54AD222551D0F300BBF3B6 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CD54AD252551D26C00BBF3B6 /* PlaceListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTVCell.swift; sourceTree = "<group>"; };
+		CD54AD262551D26C00BBF3B6 /* PlaceListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceListTVCell.xib; sourceTree = "<group>"; };
+		FD1EB841EC1737F4BC31793A /* Pods-ICloudSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICloudSync.release.xcconfig"; path = "Target Support Files/Pods-ICloudSync/Pods-ICloudSync.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD192B6B2551ACF400655966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31826A90EE3587D81A1004E7 /* Pods_ICloudSync.framework in Frameworks */,
+				CD1CD7C52556A36300980B9E /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD192B842551ACF600655966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD0289FA6F889C5B264A34E /* Pods_ICloudSyncTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD192B8F2551ACF600655966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB73815E6F25DCC77F1F14F /* Pods_ICloudSync_ICloudSyncUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2712DBBA21A5088DA17A9345 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF3027B04EA3D6C5DB061B65 /* Pods-ICloudSync.debug.xcconfig */,
+				FD1EB841EC1737F4BC31793A /* Pods-ICloudSync.release.xcconfig */,
+				5DFD3543D6F4B4D8DEA6D47C /* Pods-ICloudSync-ICloudSyncUITests.debug.xcconfig */,
+				9EEE0C03A2841A74826F612C /* Pods-ICloudSync-ICloudSyncUITests.release.xcconfig */,
+				AF5B983B39CAD2217236D7B6 /* Pods-ICloudSyncTests.debug.xcconfig */,
+				CC6D6E118C006C87188921BA /* Pods-ICloudSyncTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD192B652551ACF400655966 = {
+			isa = PBXGroup;
+			children = (
+				CD192B702551ACF400655966 /* ICloudSync */,
+				CD192B8A2551ACF600655966 /* ICloudSyncTests */,
+				CD192B952551ACF600655966 /* ICloudSyncUITests */,
+				CD192B6F2551ACF400655966 /* Products */,
+				2712DBBA21A5088DA17A9345 /* Pods */,
+				FF13840B1E81DE1137E39D27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD192B6F2551ACF400655966 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD192B6E2551ACF400655966 /* ICloudSync.app */,
+				CD192B872551ACF600655966 /* ICloudSyncTests.xctest */,
+				CD192B922551ACF600655966 /* ICloudSyncUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD192B702551ACF400655966 /* ICloudSync */ = {
+			isa = PBXGroup;
+			children = (
+				CD1CD7C32556A34B00980B9E /* ICloudSync.entitlements */,
+				CD33E33425566B9C00C0F2AC /* Extensions */,
+				CD54AD1F2551CECD00BBF3B6 /* CustomClasses */,
+				CD54AD152551B64D00BBF3B6 /* Resources */,
+				CD192BAE2551B19500655966 /* Coordinator */,
+				CD192BA72551B12500655966 /* Module */,
+				CD192BA42551AFCD00655966 /* CoreData */,
+				CD33E32F255669E800C0F2AC /* HelperClass */,
+				CD192B712551ACF400655966 /* AppDelegate.swift */,
+				CD192B732551ACF400655966 /* SceneDelegate.swift */,
+				CD192B772551ACF400655966 /* Main.storyboard */,
+				CD192B7D2551ACF500655966 /* Assets.xcassets */,
+				CD192B7F2551ACF500655966 /* LaunchScreen.storyboard */,
+				CD192B822551ACF500655966 /* Info.plist */,
+				CD33E33225566B5100C0F2AC /* Localizable.strings */,
+			);
+			path = ICloudSync;
+			sourceTree = "<group>";
+		};
+		CD192B8A2551ACF600655966 /* ICloudSyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD192B8B2551ACF600655966 /* ICloudSyncTests.swift */,
+				CD192B8D2551ACF600655966 /* Info.plist */,
+			);
+			path = ICloudSyncTests;
+			sourceTree = "<group>";
+		};
+		CD192B952551ACF600655966 /* ICloudSyncUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD192B962551ACF600655966 /* ICloudSyncUITests.swift */,
+				CD192B982551ACF600655966 /* Info.plist */,
+			);
+			path = ICloudSyncUITests;
+			sourceTree = "<group>";
+		};
+		CD192BA42551AFCD00655966 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CD33E339255673FA00C0F2AC /* classes */,
+				CD192B7A2551ACF400655966 /* ICloudSync.xcdatamodeld */,
+				CD192BA52551AFE600655966 /* CoreDataAccess.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CD192BA72551B12500655966 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				CD33E3282556626700C0F2AC /* PlaceDetail */,
+				CD54AD192551CBD500BBF3B6 /* AddDetail */,
+				CD192BA92551B13300655966 /* DashBoard */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		CD192BA92551B13300655966 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CD192BAB2551B14900655966 /* ViewModel */,
+				CD192BAA2551B14400655966 /* View */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		CD192BAA2551B14400655966 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD54AD242551D22000BBF3B6 /* Cells */,
+				CD192BAC2551B16C00655966 /* DashBoardListVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD192BAB2551B14900655966 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD1CD7C62556A60B00980B9E /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD192BAE2551B19500655966 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CD192BB12551B1C000655966 /* Coordinator.swift */,
+				CD192BAF2551B1AF00655966 /* AppCoordinator.swift */,
+				CD192BB32551B1D100655966 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CD33E3282556626700C0F2AC /* PlaceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CD33E32A2556627A00C0F2AC /* ViewModel */,
+				CD33E3292556627500C0F2AC /* View */,
+			);
+			path = PlaceDetail;
+			sourceTree = "<group>";
+		};
+		CD33E3292556627500C0F2AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD33E32B2556629E00C0F2AC /* PlaceDetailVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD33E32A2556627A00C0F2AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD33E32D255662D800C0F2AC /* PlaceDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD33E32F255669E800C0F2AC /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				CD33E330255669FD00C0F2AC /* ImagePickerManager.swift */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
+		CD33E33425566B9C00C0F2AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD33E33725566BED00C0F2AC /* QueueExtension.swift */,
+				CD33E33525566BAF00C0F2AC /* UIAlertControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD33E339255673FA00C0F2AC /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD33E33E2556782800C0F2AC /* Nature+CoreDataClass.swift */,
+				CD33E33F2556782900C0F2AC /* Nature+CoreDataProperties.swift */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		CD54AD152551B64D00BBF3B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD54AD172551B97700BBF3B6 /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD54AD192551CBD500BBF3B6 /* AddDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CD54AD1C2551CBE800BBF3B6 /* ViewModel */,
+				CD54AD1A2551CBDF00BBF3B6 /* View */,
+			);
+			path = AddDetail;
+			sourceTree = "<group>";
+		};
+		CD54AD1A2551CBDF00BBF3B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD54AD1D2551CBFE00BBF3B6 /* AddDetailVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD54AD1C2551CBE800BBF3B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD54AD1F2551CECD00BBF3B6 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CD54AD222551D0F300BBF3B6 /* CustomButton.swift */,
+				CD54AD202551CED800BBF3B6 /* CustomImageView.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		CD54AD242551D22000BBF3B6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CD54AD252551D26C00BBF3B6 /* PlaceListTVCell.swift */,
+				CD54AD262551D26C00BBF3B6 /* PlaceListTVCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF13840B1E81DE1137E39D27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD1CD7C42556A36300980B9E /* CloudKit.framework */,
+				A9937C7563F912A889ED4AB5 /* Pods_ICloudSync.framework */,
+				4E16293B00F1C09BF2EBD114 /* Pods_ICloudSync_ICloudSyncUITests.framework */,
+				4311CB6FCC39633E616FDBC8 /* Pods_ICloudSyncTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD192B6D2551ACF400655966 /* ICloudSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD192B9B2551ACF600655966 /* Build configuration list for PBXNativeTarget "ICloudSync" */;
+			buildPhases = (
+				584C5F18C32752174F3E9A5E /* [CP] Check Pods Manifest.lock */,
+				CD54AD162551B76900BBF3B6 /* ShellScript */,
+				CD192B6A2551ACF400655966 /* Sources */,
+				CD192B6B2551ACF400655966 /* Frameworks */,
+				CD192B6C2551ACF400655966 /* Resources */,
+				02B08C48EB406D87F8F19497 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ICloudSync;
+			productName = ICloudSync;
+			productReference = CD192B6E2551ACF400655966 /* ICloudSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD192B862551ACF600655966 /* ICloudSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD192B9E2551ACF600655966 /* Build configuration list for PBXNativeTarget "ICloudSyncTests" */;
+			buildPhases = (
+				4741D8D245C55F414BDE7D4F /* [CP] Check Pods Manifest.lock */,
+				CD192B832551ACF600655966 /* Sources */,
+				CD192B842551ACF600655966 /* Frameworks */,
+				CD192B852551ACF600655966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD192B892551ACF600655966 /* PBXTargetDependency */,
+			);
+			name = ICloudSyncTests;
+			productName = ICloudSyncTests;
+			productReference = CD192B872551ACF600655966 /* ICloudSyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD192B912551ACF600655966 /* ICloudSyncUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD192BA12551ACF600655966 /* Build configuration list for PBXNativeTarget "ICloudSyncUITests" */;
+			buildPhases = (
+				A4DDD2E858B6F51E6FF842E0 /* [CP] Check Pods Manifest.lock */,
+				CD192B8E2551ACF600655966 /* Sources */,
+				CD192B8F2551ACF600655966 /* Frameworks */,
+				CD192B902551ACF600655966 /* Resources */,
+				4CAC97BE643EAFD11C0B3734 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD192B942551ACF600655966 /* PBXTargetDependency */,
+			);
+			name = ICloudSyncUITests;
+			productName = ICloudSyncUITests;
+			productReference = CD192B922551ACF600655966 /* ICloudSyncUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD192B662551ACF400655966 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Abhi Makadiya";
+				TargetAttributes = {
+					CD192B6D2551ACF400655966 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					CD192B862551ACF600655966 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CD192B6D2551ACF400655966;
+					};
+					CD192B912551ACF600655966 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CD192B6D2551ACF400655966;
+					};
+				};
+			};
+			buildConfigurationList = CD192B692551ACF400655966 /* Build configuration list for PBXProject "ICloudSync" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD192B652551ACF400655966;
+			productRefGroup = CD192B6F2551ACF400655966 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD192B6D2551ACF400655966 /* ICloudSync */,
+				CD192B862551ACF600655966 /* ICloudSyncTests */,
+				CD192B912551ACF600655966 /* ICloudSyncUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD192B6C2551ACF400655966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD33E33325566B5100C0F2AC /* Localizable.strings in Resources */,
+				CD192B812551ACF500655966 /* LaunchScreen.storyboard in Resources */,
+				CD192B7E2551ACF500655966 /* Assets.xcassets in Resources */,
+				CD192B792551ACF400655966 /* Main.storyboard in Resources */,
+				CD54AD282551D26C00BBF3B6 /* PlaceListTVCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD192B852551ACF600655966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD192B902551ACF600655966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B08C48EB406D87F8F19497 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ICloudSync/Pods-ICloudSync-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ICloudSync/Pods-ICloudSync-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ICloudSync/Pods-ICloudSync-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4741D8D245C55F414BDE7D4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ICloudSyncTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CAC97BE643EAFD11C0B3734 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ICloudSync-ICloudSyncUITests/Pods-ICloudSync-ICloudSyncUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ICloudSync-ICloudSyncUITests/Pods-ICloudSync-ICloudSyncUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ICloudSync-ICloudSyncUITests/Pods-ICloudSync-ICloudSyncUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		584C5F18C32752174F3E9A5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ICloudSync-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4DDD2E858B6F51E6FF842E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ICloudSync-ICloudSyncUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD54AD162551B76900BBF3B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD192B6A2551ACF400655966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD33E3412556782900C0F2AC /* Nature+CoreDataProperties.swift in Sources */,
+				CD192BB22551B1C000655966 /* Coordinator.swift in Sources */,
+				CD54AD1E2551CBFE00BBF3B6 /* AddDetailVC.swift in Sources */,
+				CD192B7C2551ACF400655966 /* ICloudSync.xcdatamodeld in Sources */,
+				CD33E33825566BED00C0F2AC /* QueueExtension.swift in Sources */,
+				CD33E32C2556629E00C0F2AC /* PlaceDetailVC.swift in Sources */,
+				CD1CD7C72556A60B00980B9E /* DashboardViewModel.swift in Sources */,
+				CD54AD182551B97700BBF3B6 /* R.generated.swift in Sources */,
+				CD33E3402556782900C0F2AC /* Nature+CoreDataClass.swift in Sources */,
+				CD192BB42551B1D100655966 /* HomeCoordinator.swift in Sources */,
+				CD192B722551ACF400655966 /* AppDelegate.swift in Sources */,
+				CD54AD272551D26C00BBF3B6 /* PlaceListTVCell.swift in Sources */,
+				CD192BAD2551B16C00655966 /* DashBoardListVC.swift in Sources */,
+				CD54AD212551CED800BBF3B6 /* CustomImageView.swift in Sources */,
+				CD54AD232551D0F300BBF3B6 /* CustomButton.swift in Sources */,
+				CD192B742551ACF400655966 /* SceneDelegate.swift in Sources */,
+				CD33E33625566BAF00C0F2AC /* UIAlertControllerExtension.swift in Sources */,
+				CD33E32E255662D800C0F2AC /* PlaceDetailViewModel.swift in Sources */,
+				CD192BA62551AFE600655966 /* CoreDataAccess.swift in Sources */,
+				CD192BB02551B1AF00655966 /* AppCoordinator.swift in Sources */,
+				CD33E331255669FD00C0F2AC /* ImagePickerManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD192B832551ACF600655966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD192B8C2551ACF600655966 /* ICloudSyncTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD192B8E2551ACF600655966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD192B972551ACF600655966 /* ICloudSyncUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD192B892551ACF600655966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD192B6D2551ACF400655966 /* ICloudSync */;
+			targetProxy = CD192B882551ACF600655966 /* PBXContainerItemProxy */;
+		};
+		CD192B942551ACF600655966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD192B6D2551ACF400655966 /* ICloudSync */;
+			targetProxy = CD192B932551ACF600655966 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD192B772551ACF400655966 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD192B782551ACF400655966 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD192B7F2551ACF500655966 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD192B802551ACF500655966 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD192B992551ACF600655966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD192B9A2551ACF600655966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD192B9C2551ACF600655966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF3027B04EA3D6C5DB061B65 /* Pods-ICloudSync.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ICloudSync/ICloudSync.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ICloudSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhi.ICloudSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD192B9D2551ACF600655966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD1EB841EC1737F4BC31793A /* Pods-ICloudSync.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ICloudSync/ICloudSync.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ICloudSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhi.ICloudSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD192B9F2551ACF600655966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF5B983B39CAD2217236D7B6 /* Pods-ICloudSyncTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB56B3YVXG;
+				INFOPLIST_FILE = ICloudSyncTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhi.ICloudSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICloudSync.app/ICloudSync";
+			};
+			name = Debug;
+		};
+		CD192BA02551ACF600655966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6D6E118C006C87188921BA /* Pods-ICloudSyncTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB56B3YVXG;
+				INFOPLIST_FILE = ICloudSyncTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhi.ICloudSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICloudSync.app/ICloudSync";
+			};
+			name = Release;
+		};
+		CD192BA22551ACF600655966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DFD3543D6F4B4D8DEA6D47C /* Pods-ICloudSync-ICloudSyncUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB56B3YVXG;
+				INFOPLIST_FILE = ICloudSyncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhi.ICloudSyncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ICloudSync;
+			};
+			name = Debug;
+		};
+		CD192BA32551ACF600655966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EEE0C03A2841A74826F612C /* Pods-ICloudSync-ICloudSyncUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB56B3YVXG;
+				INFOPLIST_FILE = ICloudSyncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhi.ICloudSyncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ICloudSync;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD192B692551ACF400655966 /* Build configuration list for PBXProject "ICloudSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD192B992551ACF600655966 /* Debug */,
+				CD192B9A2551ACF600655966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD192B9B2551ACF600655966 /* Build configuration list for PBXNativeTarget "ICloudSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD192B9C2551ACF600655966 /* Debug */,
+				CD192B9D2551ACF600655966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD192B9E2551ACF600655966 /* Build configuration list for PBXNativeTarget "ICloudSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD192B9F2551ACF600655966 /* Debug */,
+				CD192BA02551ACF600655966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD192BA12551ACF600655966 /* Build configuration list for PBXNativeTarget "ICloudSyncUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD192BA22551ACF600655966 /* Debug */,
+				CD192BA32551ACF600655966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD192B7A2551ACF400655966 /* ICloudSync.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD192B7B2551ACF400655966 /* ICloudSync.xcdatamodel */,
+			);
+			currentVersion = CD192B7B2551ACF400655966 /* ICloudSync.xcdatamodel */;
+			path = ICloudSync.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD192B662551ACF400655966 /* Project object */;
+}

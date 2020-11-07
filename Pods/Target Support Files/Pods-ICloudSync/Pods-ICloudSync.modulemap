@@ -1,0 +1,6 @@
+framework module Pods_ICloudSync {
+  umbrella header "Pods-ICloudSync-umbrella.h"
+
+  export *
+  module * { export * }
+}

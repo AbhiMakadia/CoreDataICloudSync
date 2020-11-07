@@ -1,0 +1,6 @@
+framework module Pods_ICloudSync_ICloudSyncUITests {
+  umbrella header "Pods-ICloudSync-ICloudSyncUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
