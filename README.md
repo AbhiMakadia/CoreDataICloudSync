@@ -30,7 +30,7 @@ Next, enable CloudKit by checking the CloudKit checkbox in the Services group.
 <p align="leading">
     <img src="Previews/3.png">
 </p>
-<>
+
 Finally, click on + under Containers to add a new container, if CloudKit didn’t automatically create one for you.
 <p align="leading">
     <img src="Previews/4.png">
