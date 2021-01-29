@@ -15,7 +15,9 @@ This repository is an example project of how to integrate coredata database and 
 
 ##### Select the Signing & Capabilities tab in the target editor
 Open ICloudSync.xcworkspace in Xcode. Select the ICloudSync project in the Project navigator, then select the ICloudSync target. With the General tab selected, replace the Bundle Identifier with something unique. Standard practice is to use reverse domain name notation and include the project name.
-![alt text](https://github.com/AbhiMakadia/CoreDataICloudSync/blob/main/Previews/1.png)
+<p align="center">
+    <img src="Previews/1.png">
+</p>
 
 ##### Click on + Capability
 ![alt text](https://github.com/AbhiMakadia/CoreDataICloudSync/blob/main/Previews/2.png)
